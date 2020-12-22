@@ -9,7 +9,7 @@ export default function IndexPage() {
       <Header/>
       <div className="flex">
         <Sidebar/>
-        <div className="flex-1 space-y-2">
+        <div className="flex-1 space-y-8">
           <Card></Card>
           <Card></Card>
           <Card></Card>
