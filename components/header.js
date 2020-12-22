@@ -10,7 +10,8 @@ const header = () => {
         </h1>
       </header>
       <div className='background'>
-        <Input>
+        <Input classValue="w-4/5 p-2 h-4/5" space="w-3/5">
+      
           <button className="bg-blue-600 text-white px-6 py-2 rounded appearance-none">
             Search
           </button>

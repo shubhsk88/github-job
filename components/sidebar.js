@@ -2,16 +2,16 @@ import React, { useState } from 'react'
 import Input from './input'
 
 const Sidebar = () => {
-    
+
     return (
-        <div className="flex flex-col space-y-2">
-            <div className="flex space-x-1">
-                <input type="checkbox" name="full-time" id="full-time" />
-                <label htmlFor="full-time" className="text-xs font-semibold bg-gray-800">Full time</label>
+        <div className="flex flex-col space-y-2 w-1/3">
+            <div className="flex text-lg items-center space-x-1">
+                <input type="checkbox" className="w-4 h-4" name="full-time" id="full-time" />
+                <label htmlFor="full-time" className="font-semibold pl-2 text-gray-800">Full time</label>
             </div>
-            <div className="space-y-2">
-                <h3 className="text-gray-600 uppercase">Location</h3>
-                <Input />
+            <div className="space-y-4">
+                <h3 className="text-gray-600 text-md font-bold uppercase">Location</h3>
+                <Input classValue="w-full p-2 h-full" space="w-11/12 mr-2 py-2" />
                 
 
             </div>

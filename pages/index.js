@@ -7,15 +7,16 @@ export default function IndexPage() {
   return (
     <div className="max-w-screen-xl w-full mx-auto">
       <Header/>
-      <div>
-        <Sidebar></Sidebar>
-        <div>
+      <div className="flex">
+        <Sidebar/>
+        <div className="flex-1 space-y-2">
           <Card></Card>
           <Card></Card>
           <Card></Card>
           <Card></Card>
           <Card></Card>
         </div>
+        
       </div>
     </div>
   );

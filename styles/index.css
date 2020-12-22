@@ -8,14 +8,16 @@
 
 html,
 body {
-  @apply bg-gray-50 dark:bg-gray-900;
+  @apply bg-gray-200;
 }
 
 /* Write your own custom component styles here */
-.btn-blue {
-  @apply px-4 py-2 font-bold text-white bg-blue-500 rounded;
-}
 
+
+.background {
+  background: url("background.png");
+  @apply bg-auto bg-no-repeat my-8 w-full h-32 flex justify-center items-center rounded-md;
+}
 
 /* Start purging... */
 @tailwind utilities;
@@ -23,6 +25,10 @@ body {
 
 /* Your own custom utilities */
 
-.header{
+.header {
   color: #333333;
+}
+
+.primary-color {
+  color: #282538;
 }
