@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Input from './input'
 
 const Sidebar = () => {
+    
     return (
         <div className="flex flex-col space-y-2">
             <div className="flex space-x-1">

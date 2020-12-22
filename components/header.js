@@ -1,16 +1,20 @@
 import React from "react";
 import Input from "./input";
 
-const header = ({ bg_image }) => {
+const header = () => {
   return (
     <>
-      <div className='pb-2'>
+      <header className='my-12 text-3xl primary-color'>
         <h1>
           <span className='font-bold'>Github</span> Jobs
         </h1>
-      </div>
-      <div className={`${bg_image} flex just justify-start items-center`}>
-        <Input />
+      </header>
+      <div className='background'>
+        <Input>
+          <button className="bg-blue-600 text-white px-6 py-2 rounded appearance-none">
+            Search
+          </button>
+          </Input>
       </div>
     </>
   );

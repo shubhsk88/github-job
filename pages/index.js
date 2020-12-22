@@ -5,8 +5,8 @@ import Sidebar from '@/components/sidebar';
 
 export default function IndexPage() {
   return (
-    <>
-      <Header></Header>
+    <div className="max-w-screen-xl w-full mx-auto">
+      <Header/>
       <div>
         <Sidebar></Sidebar>
         <div>
@@ -17,6 +17,6 @@ export default function IndexPage() {
           <Card></Card>
         </div>
       </div>
-    </>
+    </div>
   );
 }
