@@ -1,16 +1,18 @@
 import { IoEarthSharp } from "react-icons/io5";
+import formatDistanceToNow from "date-fns/formatDistanceToNow";
 import { AiOutlineClockCircle } from "react-icons/ai";
+import { useMemo } from 'react';
 const Card = ({ job }) => {
-  const {type,company_logo,company,title,created_at,location}=job
+  const { type, company_logo, company, title, created_at, location } = job;
   // const { image, company, role, fullTime, city, lastUpdated } = props;
-  const fullTime = type === 'Full Time';
+  const fullTime = type === "Full Time";
+  const dateInWords = useMemo(() => formatDistanceToNow(new Date(created_at)), [
+    created_at,
+  ]);
   return (
     <div className="p-4 rounded-lg shadow bg-white flex">
       <div className="mr-8">
-        <img
-          src={company_logo}
-          className="object-contain w-32 h-32 rounded"
-        />
+        <img src={company_logo} className="object-contain w-32 h-32 rounded" />
       </div>
       <div className="flex-1 flex flex-col">
         <div>{company}</div>
@@ -29,7 +31,7 @@ const Card = ({ job }) => {
             </div>
             <div className="flex items-center">
               <AiOutlineClockCircle />
-              <div className="mx-2">{created_at}</div>
+              <div className="mx-2">{dateInWords}</div>
             </div>
           </div>
         </div>

@@ -12,7 +12,7 @@ export default function IndexPage() {
   const [page, setPage] = useState(1);
 
   const { data, isLoading, isError, error } = useQuery(`page-${page}`, () =>
-     fetchApi.get(`/positions.json?page=${page}`)
+     fetchApi.get(`/positions.json`)
    
   );
   if (isLoading)
