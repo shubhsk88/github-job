@@ -1,7 +1,16 @@
-import '../styles/index.css'
+import "../styles/index.css";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  const queryClient = new QueryClient();
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <Component {...pageProps} />
+      <ReactQueryDevtools />
+    </QueryClientProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;

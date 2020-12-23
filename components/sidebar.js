@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Input from './input'
-
+import {FaGlobeAmericas} from 'react-icons/fa'
 const Sidebar = () => {
 
     return (
@@ -11,7 +11,7 @@ const Sidebar = () => {
             </div>
             <div className="space-y-4">
                 <h3 className="text-gray-600 text-md font-bold uppercase">Location</h3>
-                <Input classValue="w-full p-2 h-full" space="w-11/12 mr-2 py-2" />
+                <Input classValue="w-full p-2 h-full" space="w-11/12 mr-2 py-2" icon={ <FaGlobeAmericas/>} placeholder="City, state, zip code or country"/>
                 
 
             </div>
